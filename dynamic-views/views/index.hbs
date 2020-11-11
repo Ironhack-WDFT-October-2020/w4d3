@@ -1,0 +1,11 @@
+<h1>Welcome {{this.name}}</h1>
+{{#if todos}}
+<h2>This is your todo list</h2>
+<ul>
+    {{#each todos}}
+        <li>{{this}}</li>
+    {{/each}}
+</ul>
+{{else}}
+<p>No todos 🙃</p>
+{{/if}}
